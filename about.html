@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SARC NIT Agartala</title>
+    <link rel="stylesheet" href="about.css"><!--href="styles/about.css"-->
+</head>
+<body>
+    <!--header-->
+    <nav id="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.jpg" alt="SARC Logo" class="logo-image">
+            <div class="logo-text">
+                <div class="logo">SARC</div>
+                <div class="logo-subtitle">Student Alumni Relations Cell</div>
+            </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About SARC Section -->
+        <section class="about-section">
+            <div class="section-header">
+                <h2>About SARC</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="content-box">
+                <p>The Student Alumni Relations Cell (SARC) at NIT Agartala serves as a vital bridge connecting current students with our distinguished alumni community. Our mission is to foster meaningful relationships, facilitate knowledge transfer, and create opportunities for collaboration between generations of NITians.</p>
+                <p>Through various initiatives including mentorship programs, networking events, career guidance sessions, and cultural activities, SARC strengthens the bond between the institute and its alumni. We work tirelessly to preserve the legacy of NIT Agartala while building a vibrant community that supports the growth and success of both students and alumni.</p>
+                <div class="sarc-highlights">
+                    <div class="highlight-item">
+                        <h3> Our Mission</h3>
+                        <p>To create a strong, engaged alumni network that supports student development and institutional growth.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3> Our Vision</h3>
+                        <p>Building lifelong connections between students, alumni, and the institute through meaningful engagement.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3> Our Work</h3>
+                        <p>Organizing alumni meets, mentorship programs, career guidance sessions, fundraising initiatives, and maintaining alumni database and communication channels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- About NITA Section -->
+        <section class="nita-section">
+            <div class="section-header">
+                <h2>About NIT Agartala</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="content-box">
+                <p>National Institute of Technology Agartala (NIT Agartala/NITA) is one of the prestigious institutions of national importance in India, established by the Ministry of Education, Government of India. Located in Jirania, Tripura, the institute has earned recognition for its academic excellence, innovative research, and strong industry connections.</p>
+                <div class="nita-strengths">
+                    <h3>Our Strengths</h3>
+                    <ul>
+                        <li><strong>Academic Excellence:</strong> Comprehensive undergraduate and postgraduate programs in Engineering, Science, and Management with a focus on quality education and research.</li>
+                        <li><strong>Research & Innovation:</strong> State-of-the-art laboratories and research facilities fostering cutting-edge research in various domains.</li>
+                        <li><strong>Industry Partnerships:</strong> Strong collaborations with leading companies ensuring excellent placement opportunities and industry exposure.</li>
+                        <li><strong>Infrastructure:</strong> Modern campus facilities including smart classrooms, well-equipped labs, digital library, sports complex, and comfortable hostel accommodations.</li>
+                        <li><strong>Cultural Diversity:</strong> A melting pot of students from across India, creating a rich multicultural environment.</li>
+                        <li><strong>Alumni Network:</strong> Successful alumni working in top organizations worldwide, contributing to various sectors and maintaining strong ties with the institute.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="contact-section">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="content-box">
+                <p class="contact-intro">We'd love to hear from you! Whether you're an alumnus, current student, faculty member, or someone interested in connecting with SARC, please reach out to us.</p>
+                
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <h3>For Alumni</h3>
+                        <p>Register with us, update your information, participate in events, or contribute to mentorship programs.</p>
+                        <button class="contact-btn" onclick="openContactForm('alumni')">Connect as Alumni</button>
+                    </div>
+                    <div class="contact-card">
+                        <h3>For Students</h3>
+                        <p>Seek mentorship, participate in events, or get involved with SARC activities and initiatives.</p>
+                        <button class="contact-btn" onclick="openContactForm('student')">Connect as Student</button>
+                    </div>
+                    <div class="contact-card">
+                        <h3>For Faculty</h3>
+                        <p>Collaborate with SARC, suggest initiatives, or help facilitate student-alumni interactions.</p>
+                        <button class="contact-btn" onclick="openContactForm('faculty')">Connect as Faculty</button>
+                    </div>
+                    <div class="contact-card">
+                        <h3>General Inquiry</h3>
+                        <p>Have questions, suggestions, or feedback? We're here to help and would love to hear from you.</p>
+                        <button class="contact-btn" onclick="openContactForm('general')">Send Feedback</button>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <span>outreachstudentalumnirelations@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <span>+91-93031-29109</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <span>Student Alumni Relations Cell, NIT Agartala, Jirania, Tripura - 799046</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactForm()">&times;</span>
+            <h2 id="modalTitle">Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Phone Number">
+                <input type="text" id="userType" placeholder="I am a..." readonly>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="foot">
+        ©️ 2026 SARC NIT Agartala | Made and maintained by SARC Tech Team 
+    </footer>
+
+    <script src="about.js"></script>
+</body>
+</html>
