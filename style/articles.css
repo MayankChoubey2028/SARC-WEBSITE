@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* BODY */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #003366;
+    overflow-x: hidden;
+    padding-top: 90px; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 51, 102, 0.95);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #C8A861;
+    animation: fadeInDown 0.8s ease;
+}
+
+nav.scrolled {
+    background: rgba(0, 51, 102, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 51, 102, 0.3);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo-subtitle {
+    font-size: 11px;
+    color: #C8A861;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #C8A861;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #C8A861;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: #C8A861;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s;
+}
+
+/* ARTICLES PAGE CONTENT */
+.container {
+    margin: 40px auto;
+    background: rgb(250, 248, 248);
+    min-height: 1000px;
+    margin: 15px; 
+    padding: 10px;
+}
+
+.article-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.article-title span {
+    color: rgb(8, 5, 0);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    background: rgb(255, 255, 255);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    height: 160px;
+    background: rgb(217, 217, 217);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.a {
+    font-size: 11px;
+    color: #999;
+}
+
+.b {
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.c {
+    padding-left: 10px;
+}
+
+.card-body button {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgb(201, 162, 77);
+    background: transparent;
+    color: rgb(201, 162, 77);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.card-body button:hover {
+    background: rgb(201, 162, 77);
+    color: white;
+}
+
+.foot {
+    background: rgb(34, 34, 34);
+    color: rgb(204, 204, 204);
+    text-align: center;
+    padding: 25px;
+    font-size: 17px;
+    min-height: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 25px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(0, 51, 102, 0.98);
+        padding: 35px;
+        border-radius: 10px;
+        transition: right 0.3s;
+        backdrop-filter: blur(10px);
+        border: 2px solid #C8A861;
+    }
+
+    .nav-links.active {
+        right: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}

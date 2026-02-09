@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARC Blog | Student Alumni Relations Cell</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blogs.css"> <!-- href="styles/blogs.css" -->
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo-container">
+            <img src="sarclogo.jpeg" alt="SARC Logo" class="logo-image">
+            <div class="logo-text">
+                <div class="logo">SARC</div>
+                <div class="logo-subtitle">Student Alumni Relations Cell</div>
+            </div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blogs.html" class="active">Blogs</a></li>
+            <li><a href="about.html">About</a></li>
+        
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    
+    <section class="blog-hero">
+        <div class="blog-hero-container">
+            <div class="blog-hero-content">
+                <h1>Welcome to our Blog Page</h1>
+                <p>Alumni journeys, student voices, and moments that define our culture—brought together by the Student Alumni Relations Cell</p>
+            </div>
+
+            <!-- Inside NITA Card -->
+            <div class="inside-nita-card">
+                <h3 class="inside-nita-title">Inside NITA</h3>
+                <p class="inside-nita-text italic">Built by the community, for the community...</p>
+                <p class="inside-nita-text">Your window into the life, culture, and stories of National Institute of Technology Agartala</p>
+                <p class="inside-nita-text">Want to contribute or have something to share?</p>
+                <a href="#join" class="join-btn">Join Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <!-- Latest Section -->
+        <div class="latest-section">
+            <h2 class="latest-title">Latest</h2>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog cards will be inserted here by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="foot">
+        ©️ 2026 SARC NIT Agartala | Made and maintained by SARC Tech Team 
+    </div>
+
+    <script src="blogs.js"></script>
+</body>
+</html>
